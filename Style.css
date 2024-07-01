@@ -91,7 +91,7 @@ body {
     position: fixed;
     overflow: hidden;
     top: 46.7px;
-    right: -400px;
+    transform: translate(100vw);
     width: 1px;
     background-color: rgba(33, 22, 81, 0.33);
     backdrop-filter: blur(10px);
@@ -100,10 +100,11 @@ body {
     padding-right: 100px;
     transition: 0.3s ease;
     border-bottom-left-radius: 10%;
+    margin-left: 100%;
 }
 
 .nav-menu.active{
-    right: -20px;
+    transform: translateX(-250px);
     visibility: visible;
 }
 

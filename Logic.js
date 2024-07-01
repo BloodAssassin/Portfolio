@@ -17,7 +17,7 @@
 				color: [255, 255, 255],
 				alpha: 0.3
 			},
-			speed: 0.5,
+			speed: 0.25,
 			angle: 20
 		};
 
