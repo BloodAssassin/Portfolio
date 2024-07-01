@@ -1,14 +1,21 @@
 body {
-	background: #090d00;
     padding: 0;
     margin: 0;
+
+    background: linear-gradient(-45deg, #00f2ff, #018dff, #8800ff, #008cff);
+	background-size: 300% 300%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+
+
 
 .menu{
     position: fixed;
     width: 100%;
     margin-top: 0;
-    background-color: rgba(33, 22, 81, 0.33);
+    background-color: rgba(33, 22, 81, 0.462);
     backdrop-filter: blur(10px);
     height: 46.5px;
 }
@@ -30,7 +37,7 @@ body {
 }
 
 .menu li:hover{
-    color:black;
+    color:rgb(0, 0, 0);
     text-shadow: 0px 0px 4px #ffffff;
 }
 
@@ -93,7 +100,7 @@ body {
     top: 46.7px;
     transform: translate(100vw);
     width: 1px;
-    background-color: rgba(33, 22, 81, 0.33);
+    background-color: rgba(33, 22, 81, 0.462);
     backdrop-filter: blur(10px);
     height: 200px;
     width: 200px;
