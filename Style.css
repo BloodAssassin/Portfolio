@@ -30,7 +30,8 @@ body {
 }
 
 .menu li:hover{
-    color:rgb(81, 0, 255);
+    color:black;
+    text-shadow: 0px 0px 4px #ffffff;
 }
 
 #selected{
@@ -102,7 +103,7 @@ body {
 }
 
 .nav-menu.active{
-    right: -40px;
+    right: -20px;
     visibility: visible;
 }
 
@@ -123,7 +124,8 @@ body {
 }
 
 .nav-menu li:hover{
-    color:rgb(81, 0, 255);
+    color:black;
+    text-shadow: 0px 0px 4px #ffffff;
 }
 
 .nav-menu a{
