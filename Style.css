@@ -28,12 +28,12 @@ body {
 }
 
 .menu li:hover{
-    color:rgb(153, 0, 255);
+    color:rgb(81, 0, 255);
 }
 
 #selected{
     color:black;
-    filter: drop-shadow(0px 0px 4px #ffffff);
+    text-shadow: 0px 0px 4px #ffffff;
 }
 
 .menu a{
