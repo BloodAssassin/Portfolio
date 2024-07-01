@@ -105,7 +105,7 @@ body {
 }
 
 .nav-menu.active{
-    transform: translate(75%, 0);
+    transform: translate(80%, 0);
     visibility: visible;
 }
 
