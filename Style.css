@@ -2,14 +2,13 @@ body {
 	background: #090d00;
     padding: 0;
     margin: 0;
-}
 
-body, html{
-    max-width: 100%;
     overflow-x: hidden;
 }
 
 .menu{
+    position: fixed;
+    width: 100%;
     margin-top: 0;
     background-color: rgba(33, 22, 81, 0.33);
     backdrop-filter: blur(10px);
@@ -90,10 +89,11 @@ body, html{
 }
 
 .nav-menu{
-    position: absolute;
-    visibility: hidden;
-    right: -1000px;
+    position: fixed;
+    overflow: hidden;
     top: 46.7px;
+    right: -400px;
+    width: 1px;
     background-color: rgba(33, 22, 81, 0.33);
     backdrop-filter: blur(10px);
     height: 200px;

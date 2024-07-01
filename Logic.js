@@ -243,7 +243,3 @@ function ToggleMenu()
     navButton.classList.toggle('active');
     navMenu.classList.toggle('active');
 }
-
-document.addEventListener('touchmove', function(e) {
-    e.preventDefault();
-});
