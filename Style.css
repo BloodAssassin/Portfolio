@@ -2,7 +2,9 @@ body {
 	background: #090d00;
     padding: 0;
     margin: 0;
+}
 
+body, html{
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -90,7 +92,6 @@ body {
 .nav-menu{
     position: absolute;
     visibility: hidden;
-    display: flex;
     right: -1000px;
     top: 46.7px;
     background-color: rgba(33, 22, 81, 0.33);
@@ -99,6 +100,7 @@ body {
     width: 200px;
     padding-right: 100px;
     transition: 0.3s ease;
+    border-bottom-left-radius: 10%;
 }
 
 .nav-menu.active{
