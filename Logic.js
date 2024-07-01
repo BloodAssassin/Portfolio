@@ -1,3 +1,5 @@
+
+//BACKGROUND
 (function($){
 	var canvas = $('#bg').children('canvas'),
 		background = canvas[0],
