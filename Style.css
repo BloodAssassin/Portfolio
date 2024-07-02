@@ -6,6 +6,8 @@ body {
 
     overflow-y: scroll;
     overflow-x: hidden;
+
+    zoom: 0.9;
 }
 
 :root {
@@ -231,6 +233,7 @@ body {
 .content
 {
     max-width: 94.5%;
+    font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 50px;
@@ -249,6 +252,10 @@ body {
     margin-top: 20px;
     max-width: 100%;
     border-radius: 1%;
+}
+
+.smallScale{
+    width: 50%;
 }
 
 .content h2{
@@ -272,6 +279,10 @@ hr{
     /* For Phones: */
     .menu ul{visibility: hidden;}
     .nav-button{visibility: visible;}
+    .menu{zoom: 1.2;}
+    .nav-menu{zoom: 1.2;}
+    .nav-button{zoom: 1.2;}
+    .logo{zoom: 1.2;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -281,4 +292,8 @@ hr{
     .nav-menu{transition: 0s; visibility: hidden;}
     .nav-menu.active{transition: 0s; visibility: hidden;}
     .nav-button span{transition: 0s;}
+    .menu{zoom: 1.1;}
+    .nav-menu{zoom: 1.1;}
+    .nav-button{zoom: 1.1;}
+    .logo{zoom: 1.1;}
 }
