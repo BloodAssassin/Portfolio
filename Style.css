@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 
     zoom: 0.9;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 111vh;
 }
 
 :root {
@@ -104,10 +108,16 @@ body {
 }
 
 .logo{
+    display: block;
     position: fixed;
     top:10px;
     left:10px;
     z-index: 9;
+}
+
+.logo:hover{
+    filter: drop-shadow(0px 0px 30px #a4a4a4);
+    cursor: pointer;
 }
 
 .logo img{
@@ -267,6 +277,23 @@ body {
     text-align: left;
 }
 
+.content a{
+    color: rgb(0, 179, 255);
+}
+
+.content ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.content li img{
+    width: 290px;
+}
+
 hr{
     opacity: 0.2;
     background-color: rgb(255, 255, 255);
@@ -274,8 +301,66 @@ hr{
     height: 2px;
 }
 
+.footer
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    background-color: rgba(33, 22, 81, 0.462);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.link a{
+    color:white;
+    text-decoration: 0px;
+    font-weight: bold;
+}
+
+.link img{
+    width: 22px;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.link{
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.link a:hover{
+    color: rgb(0, 179, 255);
+    filter: drop-shadow(0px 0px 15px #a4a4a4);
+}
+
 /* RESPONSIVE */
 @media only screen and (min-width: 0px) {
+    /* For Thin Phones: */
+    .menu ul{visibility: hidden;}
+    .nav-button{visibility: visible;}
+    .menu{zoom: 1.2;}
+    .nav-menu{zoom: 1.2;}
+    .nav-button{zoom: 1.2;}
+    .logo{zoom: 1.2;}
+    .link{
+        vertical-align: middle;
+        display: flex;
+        margin-right: 0px;
+    }
+    .content ul{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 6px;
+    }
+    .content li img{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
     /* For Phones: */
     .menu ul{visibility: hidden;}
     .nav-button{visibility: visible;}
@@ -283,10 +368,20 @@ hr{
     .nav-menu{zoom: 1.2;}
     .nav-button{zoom: 1.2;}
     .logo{zoom: 1.2;}
+    .link{
+        vertical-align: middle;
+        display: flex;
+        margin-right: 0px;
+    }
+    .content ul{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
-    /* For Phones: */
+    /* For Computers: */
     .menu ul{visibility: visible;}
     .nav-button{transition: 0s; visibility: hidden;}
     .nav-menu{transition: 0s; visibility: hidden;}
@@ -296,4 +391,13 @@ hr{
     .nav-menu{zoom: 1.1;}
     .nav-button{zoom: 1.1;}
     .logo{zoom: 1.1;}
+    .link{
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .content ul{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+    }
 }
