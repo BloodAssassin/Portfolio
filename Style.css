@@ -245,13 +245,13 @@ body {
     color:white;
     background-color: rgba(33, 22, 81, 0.462);
     backdrop-filter: blur(10px);
-    border-radius: 1%;
+    border-radius: 10px;
 }
 
 .content img{
     margin-top: 20px;
     max-width: 100%;
-    border-radius: 1%;
+    border-radius: 10px;
 }
 
 .smallScale{
