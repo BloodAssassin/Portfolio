@@ -6,13 +6,13 @@
 		foreground2 = canvas[2],
 		config = {
 			circle: {
-				amount: 1,
+				amount: 0,
 				layer: 3,
 				color: [157, 97, 207],
 				alpha: 0.3
 			},
 			line: {
-				amount: 5,
+				amount: 0,
 				layer: 3,
 				color: [255, 255, 255],
 				alpha: 0.3
