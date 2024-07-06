@@ -349,6 +349,58 @@ hr{
     filter: drop-shadow(0px 0px 15px #a4a4a4);
 }
 
+.profile{
+    max-width: 94.5%;
+    height: 210px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    color:white;
+    background-color: rgba(33, 22, 81, 0.462);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.profilePicture{
+    border-radius: 100%;
+    width: 300px;
+
+    filter: drop-shadow(0px 0px 30px #00000081);
+}
+
+.profile h1{
+    font-weight: bold;
+    font-size: 45px;
+    filter: drop-shadow(0px 0px 30px #000000);
+}
+
+.profile div{
+    position: relative;
+    top: 50px;
+}
+
+.profile .link{
+    font-size: 21px;
+    position: absolute;
+    left: 16px;
+    top: 176px;
+    z-index: 10;
+}
+
+.profile .link img{
+    width: 27px;
+}
+
+.profile .link a:hover{
+    filter: drop-shadow(0px 0px 10px #ffffff4f);
+}
+
 /* RESPONSIVE */
 @media only screen and (min-width: 0px) {
     /* For Thin Phones: */
@@ -370,6 +422,7 @@ hr{
     .content li img{
         width: 100%;
     }
+    .profile .link{top: 0px;}
 
 }
 
@@ -390,6 +443,7 @@ hr{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 6px;
     }
+    .profile .link{top: 176px;}
 
 }
 
@@ -413,4 +467,5 @@ hr{
         grid-template-columns: repeat(3, 1fr);
         column-gap: 10px;
     }
+    .profile .link{top: 176px;}
 }
