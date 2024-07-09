@@ -494,6 +494,13 @@ a{
 
 @media (pointer: coarse)
 {
+    .menu ul{visibility: hidden;}
+    .nav-button{visibility: visible;}
+    .menu{zoom: 1.2;}
+    .nav-menu{zoom: 1.2;}
+    .nav-button{zoom: 1.2;}
+    .logo{zoom: 1.2;}
+    
     #bg{display: none;}
     body{
         background: rgb(15,131,217);
