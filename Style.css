@@ -461,6 +461,7 @@ a{
         filter: none;
     }
 
+    #bg{display: none;}
 
 }
 
@@ -490,25 +491,13 @@ a{
         transform: scale(1.1);
         filter: drop-shadow(0px 0px 20px #000000);
     }
+    #bg{display:flex;}
+    body{background: black}
 }
 
-@media (pointer: coarse)
-{
-    .menu ul{visibility: hidden;}
-    .nav-button{visibility: visible;}
-    .menu{zoom: 1.2;}
-    .nav-menu{zoom: 1.2;}
-    .nav-button{zoom: 1.2;}
-    .logo{zoom: 1.2;}
-    
-    #bg{display: none;}
+@media (pointer: coarse){
     body{
         background: rgb(15,131,217);
         background: linear-gradient(168deg, rgba(15,131,217,1) 0%, rgba(54,40,207,1) 7%, rgba(50,36,191,1) 11%, rgba(24,11,91,1) 42%, rgba(17,4,65,1) 55%);
     }
-}
-
-@media (pointer: cursor){
-    #bg{display:flex;}
-    body{background: black}
 }
