@@ -496,7 +496,7 @@ a{
 }
 }
 
-@media (any-pointer: coarse) {
+@media (hover: none), (pointer: coarse){
     body{
         background: rgb(15,131,217);
         background: linear-gradient(168deg, rgba(15,131,217,1) 0%, rgba(54,40,207,1) 7%, rgba(50,36,191,1) 11%, rgba(24,11,91,1) 42%, rgba(17,4,65,1) 55%);
