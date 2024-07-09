@@ -242,6 +242,7 @@ body {
 
 .content
 {
+    display: block;
     max-width: 94.5%;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
