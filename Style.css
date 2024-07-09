@@ -406,10 +406,16 @@ a{
     overflow-wrap: break-word;
 }
 
+body{
+    background: rgb(15,131,217);
+    background: linear-gradient(168deg, rgba(15,131,217,1) 0%, rgba(54,40,207,1) 7%, rgba(50,36,191,1) 11%, rgba(24,11,91,1) 42%, rgba(17,4,65,1) 55%);
+}
 
+#bg{
+    display: none;
+}
 
-@media (any-pointer: fine) {
-    /* RESPONSIVE */
+/* RESPONSIVE */
 @media only screen and (min-width: 0px) {
     /* For Thin Phones: */
     .menu ul{visibility: hidden;}
@@ -463,6 +469,9 @@ a{
         transform: scale(1);
         filter: none;
     }
+
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -491,70 +500,11 @@ a{
         transform: scale(1.1);
         filter: drop-shadow(0px 0px 20px #000000);
     }
+
+}
+
+@media (any-pointer: fine) {
     #bg{display:flex;}
     body{background: black}
-}
-}
-
-@media (hover: none), (pointer: coarse){
-    body{
-        background: rgb(15,131,217);
-        background: linear-gradient(168deg, rgba(15,131,217,1) 0%, rgba(54,40,207,1) 7%, rgba(50,36,191,1) 11%, rgba(24,11,91,1) 42%, rgba(17,4,65,1) 55%);
-    }
-
-    @media only screen and (min-width: 0px) {
-        /* For Thin Phones: */
-        .menu ul{visibility: hidden;}
-        .nav-button{visibility: visible;}
-        .menu{zoom: 1.2;}
-        .nav-menu{zoom: 1.2;}
-        .nav-button{zoom: 1.2;}
-        .logo{zoom: 1.2;}
-        .link{
-            vertical-align: middle;
-            display: flex;
-            margin-right: 0px;
-        }
-        .content ul{
-            grid-template-columns: repeat(1, 1fr);
-            column-gap: 6px;
-        }
-        .content li img{
-            width: 100%;
-        }
-        .profile .link{top: 0px;}
-        .content li img:hover{
-            z-index: 1;
-            transform: scale(1);
-            filter: none;
-        }
-    
-    
-    }
-    
-    @media only screen and (min-width: 600px) {
-        /* For Phones: */
-        .menu ul{visibility: hidden;}
-        .nav-button{visibility: visible;}
-        .menu{zoom: 1.2;}
-        .nav-menu{zoom: 1.2;}
-        .nav-button{zoom: 1.2;}
-        .logo{zoom: 1.2;}
-        .link{
-            vertical-align: middle;
-            display: flex;
-            margin-right: 0px;
-        }
-        .content ul{
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 6px;
-        }
-        .profile .link{top: 176px;}
-        .content li img:hover{
-            z-index: 1;
-            transform: scale(1);
-            filter: none;
-        }
-    }
 }
 
