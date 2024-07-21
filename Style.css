@@ -505,6 +505,6 @@ body{
 
 @media (any-pointer: fine) {
     #bg{display:flex;}
-    body{background: black}
+    body{background: rgb(49, 125, 255)}
 }
 
