@@ -244,8 +244,8 @@ function ToggleMenu()
     navMenu.classList.toggle('active');
 }
 
-const birth = new Date("2005-03-23");
-const diffTime = Math.abs(new Date() - birth);
-const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365)); 
+//const birth = new Date("2005-03-23");
+//const diffTime = Math.abs(new Date() - birth);
+//const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365));
 
-document.getElementById("age").innerHTML = '('+ diffYears + ')';
+//document.getElementById("age").innerHTML = '('+ diffYears + ')';
