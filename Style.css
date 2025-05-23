@@ -18,6 +18,10 @@ body {
   color-scheme: dark;
 }
 
+#logo{
+  border-radius: 100%;
+}
+
 .menu {
   position: fixed;
   width: 100%;
