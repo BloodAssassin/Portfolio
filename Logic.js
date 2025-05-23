@@ -249,3 +249,6 @@ function ToggleMenu()
 //const diffYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365));
 
 //document.getElementById("age").innerHTML = '('+ diffYears + ')';
+
+const currentYear = new Date().getFullYear();
+document.getElementById("copyrightYear").innerHTML = currentYear;
